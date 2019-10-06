@@ -13,7 +13,7 @@ public class Brotli {
     public static final int DEFAULT_LGBLOCK = 0;
 
     static {
-        System.loadLibrary("brotli");
+        System.loadLibrary("br");
     }
 
     public enum Mode {

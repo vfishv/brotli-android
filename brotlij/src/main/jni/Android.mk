@@ -47,6 +47,6 @@ LOCAL_LDLIBS := -llog -landroid
 
 LOCAL_SHARED_LIBRARIES :=
 
-LOCAL_MODULE:= brotli
+LOCAL_MODULE:= br
 
 include $(BUILD_SHARED_LIBRARY)

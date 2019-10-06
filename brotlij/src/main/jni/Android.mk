@@ -6,6 +6,7 @@ include $(CLEAR_VARS)
 
 #source code
 LOCAL_SRC_FILES = $(LOCAL_PATH)/third_party/brotli/common/dictionary.c \
+    $(LOCAL_PATH)/third_party/brotli/common/transform.c \
     $(LOCAL_PATH)/third_party/brotli/dec/bit_reader.c \
     $(LOCAL_PATH)/third_party/brotli/dec/decode.c \
     $(LOCAL_PATH)/third_party/brotli/dec/huffman.c \
@@ -26,7 +27,8 @@ LOCAL_SRC_FILES = $(LOCAL_PATH)/third_party/brotli/common/dictionary.c \
     $(LOCAL_PATH)/third_party/brotli/enc/memory.c \
     $(LOCAL_PATH)/third_party/brotli/enc/metablock.c \
     $(LOCAL_PATH)/third_party/brotli/enc/static_dict.c \
-    $(LOCAL_PATH)/third_party/brotli/enc/utf8_util.c
+    $(LOCAL_PATH)/third_party/brotli/enc/utf8_util.c \
+    $(LOCAL_PATH)/third_party/brotli/enc/encoder_dict.c
 
 
 LOCAL_SRC_FILES += $(LOCAL_PATH)/src/BrotliJni.cpp \
